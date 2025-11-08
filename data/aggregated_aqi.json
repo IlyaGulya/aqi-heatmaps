@@ -1,0 +1,74 @@
+[
+  {
+    "station_id": "bgd_001",
+    "station_name": "Mostar",
+    "latitude": 44.803,
+    "longitude": 20.457,
+    "timestamp": "2024-05-01T08:00:00Z",
+    "aqi": 85.28
+  },
+  {
+    "station_id": "bgd_002",
+    "station_name": "City Hall",
+    "latitude": 44.817,
+    "longitude": 20.457,
+    "timestamp": "2024-05-01T08:00:00Z",
+    "aqi": 71.82
+  },
+  {
+    "station_id": "bgd_003",
+    "station_name": "New Belgrade",
+    "latitude": 44.82,
+    "longitude": 20.41,
+    "timestamp": "2024-05-01T08:00:00Z",
+    "aqi": 63.41
+  },
+  {
+    "station_id": "bgd_001",
+    "station_name": "Mostar",
+    "latitude": 44.803,
+    "longitude": 20.457,
+    "timestamp": "2024-05-01T09:00:00Z",
+    "aqi": 91.17
+  },
+  {
+    "station_id": "bgd_002",
+    "station_name": "City Hall",
+    "latitude": 44.817,
+    "longitude": 20.457,
+    "timestamp": "2024-05-01T09:00:00Z",
+    "aqi": 78.13
+  },
+  {
+    "station_id": "bgd_003",
+    "station_name": "New Belgrade",
+    "latitude": 44.82,
+    "longitude": 20.41,
+    "timestamp": "2024-05-01T09:00:00Z",
+    "aqi": 68.67
+  },
+  {
+    "station_id": "bgd_001",
+    "station_name": "Mostar",
+    "latitude": 44.803,
+    "longitude": 20.457,
+    "timestamp": "2024-05-01T10:00:00Z",
+    "aqi": 99.16
+  },
+  {
+    "station_id": "bgd_002",
+    "station_name": "City Hall",
+    "latitude": 44.817,
+    "longitude": 20.457,
+    "timestamp": "2024-05-01T10:00:00Z",
+    "aqi": 83.39
+  },
+  {
+    "station_id": "bgd_003",
+    "station_name": "New Belgrade",
+    "latitude": 44.82,
+    "longitude": 20.41,
+    "timestamp": "2024-05-01T10:00:00Z",
+    "aqi": 69.72
+  }
+]
