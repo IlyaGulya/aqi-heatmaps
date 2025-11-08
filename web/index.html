@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belgrade AQI Heatmap</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-u6QHr0CboBPXa9H1gXk5nHuhF8x7Zg9G3uY9Q0pInCk="
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Belgrade AQI Heatmap</h1>
+      <p>
+        Explore historical air-quality data for Belgrade. Choose a time window to
+        calculate an aggregated AQI heatmap across all monitoring stations.
+      </p>
+    </header>
+    <main>
+      <section class="controls">
+        <form id="controls-form">
+          <label>
+            Window start
+            <input type="datetime-local" id="start-input" required />
+          </label>
+          <label>
+            Window length (hours)
+            <input type="number" id="window-input" min="1" max="168" value="1" required />
+          </label>
+          <button type="submit">Apply window</button>
+        </form>
+        <p class="meta" id="selection-summary"></p>
+      </section>
+      <section class="map-container">
+        <div id="map"></div>
+        <aside class="legend">
+          <h2>Legend</h2>
+          <ul>
+            <li><span class="legend-swatch good"></span>Good (0-50)</li>
+            <li><span class="legend-swatch moderate"></span>Moderate (51-100)</li>
+            <li><span class="legend-swatch unhealthy-sg"></span>Sensitive Groups (101-150)</li>
+            <li><span class="legend-swatch unhealthy"></span>Unhealthy (151-200)</li>
+            <li><span class="legend-swatch very-unhealthy"></span>Very Unhealthy (201-300)</li>
+            <li><span class="legend-swatch hazardous"></span>Hazardous (301-500)</li>
+          </ul>
+        </aside>
+      </section>
+      <section class="table-section">
+        <h2>Aggregated station readings</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Station</th>
+              <th>Average AQI</th>
+              <th>Observations</th>
+            </tr>
+          </thead>
+          <tbody id="station-table"></tbody>
+        </table>
+      </section>
+    </main>
+    <footer>
+      <p>
+        Data is generated from raw concentration values provided by the World Air
+        Quality Index project. AQI computation follows U.S. EPA breakpoints.
+      </p>
+    </footer>
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-o9N1j7kP5gyw1+ZKQq1Je6bYPSdXef3SUWpJQPNP0v8="
+      crossorigin=""
+    ></script>
+    <script src="https://unpkg.com/leaflet.heat/dist/leaflet-heat.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
